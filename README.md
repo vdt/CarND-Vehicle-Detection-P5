@@ -1,5 +1,5 @@
 
-# Vehicle Detection Project
+# Vehicle Detection and Tracking Project
 
 The goals / steps of this project are the following:
 
@@ -18,7 +18,8 @@ The goals / steps of this project are the following:
 [image5]: ./examples/bboxes_and_heat.png
 [image6]: ./examples/labels_map.png
 [image7]: ./examples/output_bboxes.png
-[video1]: ./project_video.mp4
+[video1]: ./project_output.mp4
+[video2]: ./test_output.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -60,7 +61,7 @@ I use 8x8 pixels for each cell and 2x2 cells in each block. This gives a good ba
 
 I used total three feature vectors. One is spatial binning to get the raw color info, second is using a histogram of the color spectrum to get color info, and third is the HOG features to get the shape info. I concatenate all the features to give the feature vector.
 
-The total length of the feature vector comes to 6108. It takes 3.26 seconds to train my SVC model with a test accuracy of 0.9907.
+The total length of the feature vector comes to 6108. It takes 4.71 seconds to train the SVC model with a test accuracy of 0.9901
 
 I trained a linear SVM using `LinearSVC()` from the `sklearn.svm` package
 
@@ -82,7 +83,7 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spat
 ### Video Implementation
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./project_output.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
