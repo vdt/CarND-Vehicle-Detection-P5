@@ -110,4 +110,8 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+1. The size of the bounding box does not flow smoothly between frames
+
+2. When two cars are overtaking, it treats both as the same car. track individual positions more accurately over time.
+
+3. The data processing pipeline is slow at 3 frames per second . We have to work on it to make it realtime.
