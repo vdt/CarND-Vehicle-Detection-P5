@@ -51,11 +51,18 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
-I tried various combinations of parameters and...
+I tried HOG search with various combinations of parameters and found that `YCrCb` color space worked fine.I use all the three channels as the feature vectors.
+
+I use 8x8 pixels for each cell and 2x2 cells in each block. This gives a good balance of being computation heavy and extracting good feature set.
+
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
-I trained a linear SVM using...
+I used total three feature vectors. One is spatial binning to get the raw color info, second is using a histogram of the color spectrum to get color info, and third is the HOG features to get the shape info. I concatenate all the features to give the feature vector.
+
+The total length of the feature vector comes to 6108. It takes 3.26 seconds to train my SVC model with a test accuracy of 0.9907.
+
+I trained a linear SVM using `LinearSVC()` from the `sklearn.svm` package
 
 ### Sliding Window Search
 
