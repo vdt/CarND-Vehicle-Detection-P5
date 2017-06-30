@@ -11,6 +11,10 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
+[car-hog]: ./examples/Car - HOG Viz.png
+[car-hog1]: ./examples/Car - HOG Viz-1.png
+[notcar-hog]: ./examples/Not Car - HOG Viz.png
+[notcar-hog1]: ./examples/Not Car - HOG Viz-1.png
 [image1]: ./examples/car_not_car.png
 [image2]: ./examples/HOG_example.jpg
 [image3]: ./examples/sliding_windows.jpg
@@ -47,8 +51,16 @@ I then explored different color spaces and different `skimage.hog()` parameters 
 
 Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
 
+**Cars**
 
-![alt text][image2]
+![alt text][car-hog]
+![alt text][car-hog1]
+
+**Not-Cars**
+
+![alt text][notcar-hog]
+![alt text][notcar-hog1]
+
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
