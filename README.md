@@ -59,6 +59,8 @@ I use 8x8 pixels for each cell and 2x2 cells in each block. This gives a good ba
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
+HOG Feature Extraction and Training Linear SVM Classifier is implemented in  `2. Histogram of Oriented Gradients (HOG) Feature Extraction on a Labeled Training Set of Images and Training Linear SVM Classifier` section of the [Vehicle-Detection-and-Tracking.ipynb](Vehicle-Detection-and-Tracking.ipynb) file.
+
 I used total three feature vectors. One is spatial binning to get the raw color info, second is using a histogram of the color spectrum to get color info, and third is the HOG features to get the shape info. I concatenate all the features to give the feature vector.
 
 The total length of the feature vector comes to 6108. It takes 4.71 seconds to train the SVC model with a test accuracy of 0.9901
