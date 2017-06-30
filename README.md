@@ -37,7 +37,7 @@ You're reading it!
 
 The HOG Features were extracted using the `hog` method in `skimage.feature` package.
 
-The code for this in the Lesson Functions section of the [Vehicle-Detection-and-Tracking.ipynb](Vehicle-Detection-and-Tracking.ipynb) file.
+The code for this in the `1. Lesson Functions` section of the [Vehicle-Detection-and-Tracking.ipynb](Vehicle-Detection-and-Tracking.ipynb) file.
 
 I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
@@ -69,7 +69,7 @@ I trained a linear SVM using `LinearSVC()` from the `sklearn.svm` package
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+Sliding Window Search is implemented in `3. Implement a Sliding-Window Technique and use the Trained Classifier to search for cars in images` section of the [Vehicle-Detection-and-Tracking.ipynb](Vehicle-Detection-and-Tracking.ipynb) file.
 
 ![alt text][image3]
 
