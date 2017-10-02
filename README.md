@@ -16,6 +16,11 @@ The goals / steps of this project are the following:
 [notcar-hog]: ./output_images/NotCar-HOGViz.png
 [notcar-hog1]: ./output_images/NotCar-HOGViz-1.png
 [heatmap]: ./output_images/heatmap.png
+[heatmap0a]: ./output_images/heatmap0a.png
+[heatmap0b]: ./output_images/heatmap0b.png
+[heatmap1]: ./output_images/heatmap1.png
+[heatmap2]: ./output_images/heatmap2.png
+[heatmap3]: ./output_images/heatmap3.png
 [image1]: ./examples/car_not_car.png
 [image2]: ./examples/HOG_example.jpg
 [image3]: ./examples/sliding_windows.jpg
@@ -110,6 +115,11 @@ Here's an example result showing the heatmap from a series of frames of video, t
 ### Here are six frames and their corresponding heatmaps:
 
 ![alt text][heatmap]
+![alt text][heatmap0a]
+![alt text][heatmap0b]
+![alt text][heatmap1]
+![alt text][heatmap2]
+![alt text][heatmap3]
 
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
 
