@@ -15,6 +15,7 @@ The goals / steps of this project are the following:
 [car-hog1]: ./output_images/Car-HOGViz-1.png
 [notcar-hog]: ./output_images/NotCar-HOGViz.png
 [notcar-hog1]: ./output_images/NotCar-HOGViz-1.png
+[heatmap]: ./output_images/heatmap.png
 [image1]: ./examples/car_not_car.png
 [image2]: ./examples/HOG_example.jpg
 [image3]: ./examples/sliding_windows.jpg
@@ -85,13 +86,13 @@ I trained a linear SVM using `LinearSVC()` from the `sklearn.svm` package
 
 Sliding Window Search is implemented in `3. Implement a Sliding-Window Technique and use the Trained Classifier to search for cars in images` section of the [Vehicle-Detection-and-Tracking.ipynb](Vehicle-Detection-and-Tracking.ipynb) file.
 
-![alt text][image3]
+
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
-![alt text][image4]
+
 ---
 
 ### Video Implementation
@@ -108,13 +109,13 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 ### Here are six frames and their corresponding heatmaps:
 
-![alt text][image5]
+![alt text][heatmap]
 
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
-![alt text][image6]
+
 
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
-![alt text][image7]
+
 
 
 
