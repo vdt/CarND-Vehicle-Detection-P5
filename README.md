@@ -21,6 +21,7 @@ The goals / steps of this project are the following:
 [heatmap1]: ./output_images/heatmap1.png
 [heatmap2]: ./output_images/heatmap2.png
 [heatmap3]: ./output_images/heatmap3.png
+[video-screenshot-test]: ./output_images/video-screenshot-test.png
 [image1]: ./examples/car_not_car.png
 [image2]: ./examples/HOG_example.jpg
 [image3]: ./examples/sliding_windows.jpg
@@ -121,12 +122,9 @@ Here's an example result showing the heatmap from a series of frames of video, t
 ![alt text][heatmap2]
 ![alt text][heatmap3]
 
-### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
-
-
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
 
-
+![alt text][video-screenshot-test]
 
 
 ---
