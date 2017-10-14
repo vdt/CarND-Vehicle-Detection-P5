@@ -113,7 +113,7 @@ Filter for false positives and a Method for combining overlapping bounding boxes
 
 I took six test images in the test_images folder.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I had imported `from scipy.ndimage.measurements import label` at the beginning of the notebook and used the `label` function to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
 
-Here's an example result showing the heatmap from six test images, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
+Here's an example result showing the heatmap from six test images, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the image :
 
 ### Here are six frames and their corresponding heatmaps:
 
@@ -124,7 +124,7 @@ Here's an example result showing the heatmap from six test images, the result of
 ![alt text][heatmap2]
 ![alt text][heatmap3]
 
-### Here the resulting bounding boxes are drawn onto the last frame in the series:
+### Here the resulting bounding boxes are drawn onto the last frame in the series in the video:
 
 ![alt text][video-screenshot-test]
 
