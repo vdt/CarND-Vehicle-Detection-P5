@@ -92,11 +92,11 @@ I trained a linear SVM using `LinearSVC()` from the `sklearn.svm` package
 
 Sliding Window Search is implemented in `3. Implement a Sliding-Window Technique and use the Trained Classifier to search for cars in images` section of the [Vehicle-Detection-and-Tracking.ipynb](Vehicle-Detection-and-Tracking.ipynb) file.
 
-
+The `find_car` function combines HOG feature extraction with a sliding window search, the HOG features are extracted for the entire image (or a selected portion of it) and then these full-image features are subsampled according to the size of the window and then fed to the classifier. The function performs the classifier prediction on the HOG features for each window region and returns a list of rectangle objects corresponding to the windows that generated a positive ("car") prediction.
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
-Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
+Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  To Show that my pipeline is working , please refer to the 
 
 
 ---
