@@ -96,7 +96,7 @@ The `find_car` function combines HOG feature extraction with a sliding window se
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
-Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  To Show that my pipeline is working , please refer to [[#### 2|### Video Implementation]] 
+Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  To Show that my pipeline is working , please refer to [Video Implementation] 
 
 
 ---
