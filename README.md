@@ -115,7 +115,7 @@ I took six test images in the test_images folder.  From the positive detections 
 
 Here's an example result showing the heatmap from six test images, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the image :
 
-### Here are six frames and their corresponding heatmaps:
+### Here are six images and their corresponding heatmaps:
 
 ![alt text][heatmap]
 ![alt text][heatmap0a]
